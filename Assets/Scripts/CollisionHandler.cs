@@ -11,15 +11,26 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("This thing is friendly");
                 break;
             case "Finish":
-                Debug.Log("You finished!");
-                break;
-            case "Fuel":
-                Debug.Log("You found fuel!");
+                LoadNextLevel();
                 break;
             default:
                 ReloadLevel();
                 break;
         }
+
+        void LoadNextLevel()
+        {
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            int nextSceneIndex = ++currentSceneIndex;
+
+            if (nextSceneIndex == SceneManager.sceneCountInBuildSettings)
+            {
+                nextSceneIndex = 0;
+            }
+
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+
 
         void ReloadLevel()
         {
