@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 1a5526f5ae8194adeaf21d50e9f48034, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -790,18 +790,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1346650233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1147323640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8a2bb05d9a7044108a1cef7bcf67664, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollisionHandler
 --- !u!1001 &1407953399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1031,9 +1019,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8918030303124423144, guid: dd53e6a0c08dc47bbad0ade6c81d399a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1346650232}
-    - targetCorrespondingSourceObject: {fileID: 8918030303124423144, guid: dd53e6a0c08dc47bbad0ade6c81d399a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1346650233}
   m_SourcePrefab: {fileID: 100100000, guid: dd53e6a0c08dc47bbad0ade6c81d399a, type: 3}
 --- !u!1001 &6653252454021566783
 PrefabInstance:
