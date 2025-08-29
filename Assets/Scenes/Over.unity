@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 1a5526f5ae8194adeaf21d50e9f48034, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -429,7 +429,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1.3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -818,10 +818,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 153282837366487424, guid: dd53e6a0c08dc47bbad0ade6c81d399a, type: 3}
-      propertyPath: mainEngine
-      value: 
-      objectReference: {fileID: 8300000, guid: 60d3036a5a9d548b59a537ffd811cdab, type: 3}
     - target: {fileID: 2269710913410673146, guid: dd53e6a0c08dc47bbad0ade6c81d399a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.13
@@ -862,22 +858,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8022912711843664061, guid: dd53e6a0c08dc47bbad0ade6c81d399a, type: 3}
-      propertyPath: m_Resource
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8918030303124423144, guid: dd53e6a0c08dc47bbad0ade6c81d399a, type: 3}
       propertyPath: m_Name
       value: Player Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 8963391497671647125, guid: dd53e6a0c08dc47bbad0ade6c81d399a, type: 3}
-      propertyPath: crash
-      value: 
-      objectReference: {fileID: 8300000, guid: c2a6b50eae61e4f22a85859ffc13ba20, type: 3}
-    - target: {fileID: 8963391497671647125, guid: dd53e6a0c08dc47bbad0ade6c81d399a, type: 3}
-      propertyPath: success
-      value: 
-      objectReference: {fileID: 8300000, guid: 275c4a24b935449fd9a1afbdb07212e5, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
