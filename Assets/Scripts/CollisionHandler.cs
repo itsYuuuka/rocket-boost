@@ -85,13 +85,14 @@ public class CollisionHandler : MonoBehaviour
 
     private void RespondToDebugKeys()
     {
-        if (Keyboard.current.lKey.isPressed)
+        if (Keyboard.current.lKey.wasPressedThisFrame)
         {
             LoadNextLevel();
         }
-        else if (Keyboard.current.cKey.isPressed)
+        else if (Keyboard.current.cKey.wasPressedThisFrame)
         {
             isCollidable = !isCollidable;
+            Debug.Log("Collisions toggled: " + (isCollidable ? "ON" : "OFF"));
         }
     }
 
