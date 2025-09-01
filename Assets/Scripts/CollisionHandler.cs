@@ -14,6 +14,7 @@ public class CollisionHandler : MonoBehaviour
     AudioSource audioSource;
 
     bool isControllable = true;
+    bool isCollidable = true;
 
     private void Start()
     {
@@ -27,7 +28,7 @@ public class CollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (!isControllable) { return; }
+        if (!isControllable || !isCollidable) { return; }
 
         switch (other.gameObject.tag)
         {
@@ -81,13 +82,17 @@ public class CollisionHandler : MonoBehaviour
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", sceneLoadDelay);
     }
-    
+
     private void RespondToDebugKeys()
+    {
+        if (Keyboard.current.lKey.isPressed)
         {
-            if (Keyboard.current.lKey.isPressed)
-            {
-                LoadNextLevel();
-            }
+            LoadNextLevel();
         }
+        else if (Keyboard.current.cKey.isPressed)
+        {
+            isCollidable = !isCollidable;
+        }
+    }
 
 }
