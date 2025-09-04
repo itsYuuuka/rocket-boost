@@ -5228,6 +5228,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -3.34
       objectReference: {fileID: 0}
+    - target: {fileID: 5354606363146845000, guid: dfc25f7958c0c44379ff000ab2a5c286, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5701301426095904543, guid: dfc25f7958c0c44379ff000ab2a5c286, type: 3}
       propertyPath: m_Name
       value: Environment
