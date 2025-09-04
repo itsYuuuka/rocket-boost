@@ -23,7 +23,7 @@ public class CollisionHandler : MonoBehaviour
 
     private void Update()
     {
-        RespondToDebugKeys();
+        // RespondToDebugKeys();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -83,7 +83,7 @@ public class CollisionHandler : MonoBehaviour
         Invoke("ReloadLevel", sceneLoadDelay);
     }
 
-    private void RespondToDebugKeys()
+    /* private void RespondToDebugKeys()
     {
         if (Keyboard.current.lKey.wasPressedThisFrame)
         {
@@ -94,6 +94,6 @@ public class CollisionHandler : MonoBehaviour
             isCollidable = !isCollidable;
             Debug.Log("Collisions toggled: " + (isCollidable ? "ON" : "OFF"));
         }
-    }
+    } */
 
 }
